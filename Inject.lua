@@ -48,6 +48,4 @@ local headers = {
 }
 request = http_request or request or HttpPost or syn.request
 local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
---if Player.Name == 'notarchs' then
 request(abcdef)
---end
