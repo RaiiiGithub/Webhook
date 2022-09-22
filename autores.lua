@@ -9,7 +9,7 @@ local webhookcheck =
 local url =
    "https://discord.com/api/webhooks/1022225766244687903/-7qMMK2OXgzSmXwxaJzozAaUl4M9MNx6HH7x5aLCtQytk0X9dN3vFG4UDpDm2PuPwSlA"
 local data = {
-   ["content"] = " ".. Player.Name.. "Is Farming Res At The ".. shared.ResLocation.. " Gym",
+   ["content"] = " ".. Player.Name.. " Is Farming Res At The ".. shared.ResLocation.. " Gym",
    ["embeds"] = {
        {
            ["title"] = "BEEP BEEP EXPLOITER DETECTED AND BRO'S USING ".. webhookcheck,
