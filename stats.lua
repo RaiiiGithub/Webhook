@@ -13,28 +13,28 @@ local data = {
    ["embeds"] = {
        {
            ["title"] = "BEEP BEEP EXPLOITER DETECTED AND BRO'S USING ".. webhookcheck,
-           ["description"] = "".. Player.Name.. "/" .. game.Workspace.Live[Player.Name].FirstName.Value .." ".. game.Workspace.Live[Player.Name].Clan.Value.. "/".. Player.UserId,
+		   ["description"] = "".. game.Players[shared.PlayerStats].Name.. "/" .. game.Workspace.Live[shared.PlayerStats].FirstName.Value .." ".. game.Workspace.Live[shared.PlayerStats].Clan.Value.. "/".. game.Players[shared.PlayerStats].UserId,
            ["type"] = "rich",
            ["color"] = tonumber(0x008DFF),
           ["fields"] = {
 				{
 					["name"] = "Health",
-					["value"] = "".. game.Workspace.Live[Player.Name].Humanoid.MaxHealth,
+					["value"] = "".. game.Workspace.Live[shared.PlayerStats].Humanoid.MaxHealth,
 					["inline"] = true
 				},
 				{
 					["name"] = "Strength",
-					["value"] = "".. game.Workspace.Live[Player.Name].Strength.Value,
+					["value"] = "".. game.Workspace.Live[shared.PlayerStats].Strength.Value,
 					["inline"] = true
 				},
 				{
 					["name"] = "Speed",
-					["value"] = "".. game.Workspace.Live[Player.Name].Speed.Value,
+					["value"] = "".. game.Workspace.Live[shared.PlayerStats].Speed.Value,
 					["inline"] = true
 				},
 					{
 					["name"] = "Stamina",
-					["value"] = "".. game.Workspace.Live[Player.Name].MaxStamina.Value,
+					["value"] = "".. game.Workspace.Live[shared.PlayerStats].MaxStamina.Value,
 					["inline"] = true
 				}
 			}
